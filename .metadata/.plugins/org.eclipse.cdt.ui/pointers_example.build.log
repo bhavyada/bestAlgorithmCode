@@ -1,0 +1,16 @@
+22:29:33 **** Incremental Build of configuration Debug for project pointers_example ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\pointers_example.o" "..\\src\\pointers_example.c" 
+..\src\pointers_example.c: In function 'main':
+..\src\pointers_example.c:22:2: warning: format '%d' expects argument of type 'int', but argument 2 has type 'int *' [-Wformat=]
+  printf("a: %d, b: %d\n", a, b);
+  ^
+..\src\pointers_example.c:22:2: warning: format '%d' expects argument of type 'int', but argument 3 has type 'int *' [-Wformat=]
+..\src\pointers_example.c:28:2: warning: format '%d' expects argument of type 'int', but argument 4 has type 'int *' [-Wformat=]
+  printf("\n*a: %d, *b: %d, a: %d, b: %d\n",*a, *b, a, b);
+  ^
+..\src\pointers_example.c:28:2: warning: format '%d' expects argument of type 'int', but argument 5 has type 'int *' [-Wformat=]
+gcc -o pointers_example.exe "src\\pointers_example.o" 
+
+22:29:33 Build Finished (took 323ms)
+

@@ -1,0 +1,32 @@
+16:48:23 **** Incremental Build of configuration Debug for project Reverse_linked_list ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Reverse_linked_list.o" "..\\src\\Reverse_linked_list.cpp" 
+..\src\Reverse_linked_list.cpp: In function 'void Insert(Node**, int)':
+..\src\Reverse_linked_list.cpp:47:56: error: expected type-specifier before ';' token
+  struct Node* Newnode = (Node*)new(sizeof(struct Node));
+                                                        ^
+..\src\Reverse_linked_list.cpp:51:48: error: request for member 'Data' in '* head', which is of pointer type 'Node*' (maybe you meant to use '->' ?)
+  if((*head == NULL) || (Newnode->Data < *head->Data))
+                                                ^
+..\src\Reverse_linked_list.cpp:58:29: error: expected identifier before '(' token
+   while(current != NULL) && (current-> Data> Newnode-> Data)
+                             ^
+..\src\Reverse_linked_list.cpp:63:3: error: 'prev' was not declared in this scope
+   prev->Next = Newnode;
+   ^
+..\src\Reverse_linked_list.cpp: In function 'int main()':
+..\src\Reverse_linked_list.cpp:71:10: error: 'a' was not declared in this scope
+  Insert(&a, 5);
+          ^
+..\src\Reverse_linked_list.cpp:76:21: error: 'Print_Linked_list' was not declared in this scope
+  Print_Linked_list(a)
+                     ^
+..\src\Reverse_linked_list.cpp:78:21: error: 'Print_Linked_List' was not declared in this scope
+  Print_Linked_List(a);
+                     ^
+..\src\Reverse_linked_list.cpp:70:15: warning: unused variable 'head' [-Wunused-variable]
+  struct Node* head = NULL;
+               ^
+
+16:48:26 Build Finished (took 2s.540ms)
+

@@ -1,0 +1,26 @@
+11:45:57 **** Rebuild of configuration Debug for project Delete and insert ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Delete and insert.o" "..\\src\\Delete and insert.c" 
+..\src\Delete and insert.c: In function 'main':
+..\src\Delete and insert.c:68:13: error: 'a1' undeclared (first use in this function)
+  a2->Next = a1;
+             ^
+..\src\Delete and insert.c:68:13: note: each undeclared identifier is reported only once for each function it appears in
+..\src\Delete and insert.c:74:2: warning: passing argument 1 of 'delete' makes pointer from integer without a cast
+  delete(92);
+  ^
+..\src\Delete and insert.c:39:6: note: expected 'struct Node *' but argument is of type 'int'
+ void delete(struct Node* delete_elem)
+      ^
+..\src\Delete and insert.c:76:2: warning: passing argument 1 of 'delete' makes pointer from integer without a cast
+  delete(78);
+  ^
+..\src\Delete and insert.c:39:6: note: expected 'struct Node *' but argument is of type 'int'
+ void delete(struct Node* delete_elem)
+      ^
+..\src\Delete and insert.c:78:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+
+11:45:58 Build Finished (took 820ms)
+

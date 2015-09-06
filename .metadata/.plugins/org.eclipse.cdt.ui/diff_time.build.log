@@ -1,0 +1,7 @@
+13:57:18 **** Incremental Build of configuration Debug for project diff_time ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\diff_time.o" "..\\src\\diff_time.c" 
+gcc -o diff_time.exe "src\\diff_time.o" 
+
+13:57:18 Build Finished (took 297ms)
+

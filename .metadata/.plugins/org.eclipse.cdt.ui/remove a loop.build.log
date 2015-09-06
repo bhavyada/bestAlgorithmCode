@@ -1,0 +1,15 @@
+14:24:04 **** Rebuild of configuration Debug for project remove a loop ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\remove a loop.o" "..\\src\\remove a loop.c" 
+..\src\remove a loop.c: In function 'EntryNode':
+..\src\remove a loop.c:61:2: error: 'for' loop initial declarations are only allowed in C99 or C11 mode
+  for(int k=0;k<Num_of_nodes;k++)
+  ^
+..\src\remove a loop.c:61:2: note: use option -std=c99, -std=gnu99, -std=c11 or -std=gnu11 to compile your code
+..\src\remove a loop.c: In function 'main':
+..\src\remove a loop.c:89:24: error: void value not ignored as it ought to be
+    struct Node* node = EntryNode(head1);
+                        ^
+
+14:24:04 Build Finished (took 255ms)
+

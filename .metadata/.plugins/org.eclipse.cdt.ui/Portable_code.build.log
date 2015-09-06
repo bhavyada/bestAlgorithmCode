@@ -1,0 +1,19 @@
+21:53:35 **** Incremental Build of configuration Debug for project Portable_code ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Portable_code.o" "..\\src\\Portable_code.c" 
+..\src\Portable_code.c: In function 'main':
+..\src\Portable_code.c:23:7: error: assignment of read-only location '*ccp'
+  *ccp = 'b';
+       ^
+..\src\Portable_code.c:27:7: warning: assignment from incompatible pointer type
+  dccp = &cp;
+       ^
+..\src\Portable_code.c:28:9: error: assignment of read-only location '**dccp'
+  **dccp = 'a';
+         ^
+..\src\Portable_code.c:25:9: warning: unused variable 'dcp' [-Wunused-variable]
+  char **dcp = &cp;
+         ^
+
+21:53:35 Build Finished (took 210ms)
+
